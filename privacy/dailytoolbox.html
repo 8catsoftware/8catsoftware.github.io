@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>DailyToolBox – Privacy Policy | 8catSoftware</title>
+  <meta name="description" content="Privacy policy for the DailyToolBox app. Explains permissions, PDF tools, scanner features, ads (AdMob) and on-device processing." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ["Inter","system-ui","-apple-system","Segoe UI","Roboto","Ubuntu","Cantarell","Noto Sans","Helvetica","Arial","sans-serif"]
+          },
+          colors: {
+            brand: { 600:"#16a34a" },
+            ink: { 900:"#0B1120", 800:"#111827", 600:"#374151", 500:"#6b7280" }
+          },
+          boxShadow: {
+            soft:"0 10px 30px -12px rgba(0,0,0,0.25)"
+          }
+        }
+      },
+      darkMode: 'class'
+    }
+  </script>
+
+  <meta property="og:title" content="DailyToolBox – Privacy Policy" />
+  <meta property="og:description" content="How DailyToolBox processes camera/scanner data, files, ads and device signals." />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://8catsoftware.github.io/privacy/dailytoolbox-en.html" />
+</head>
+
+<body class="bg-white text-ink-800 dark:bg-ink-900 dark:text-white">
+  <header class="sticky top-0 z-40 backdrop-blur bg-white/70 dark:bg-ink-900/60 border-b border-black/5">
+    <div class="max-w-4xl mx-auto px-4 py-3 flex items-center justify-between">
+      <a href="/" class="flex items-center gap-3">
+        <div class="w-9 h-9 rounded-2xl bg-green-600 flex items-center justify-center text-white font-extrabold shadow-soft">8</div>
+        <span class="font-bold tracking-tight">8catSoftware</span>
+      </a>
+      <nav class="hidden md:flex items-center gap-6 text-sm">
+        <a href="/#apps" class="hover:text-green-600">Apps</a>
+        <a href="/#privacy" class="hover:text-green-600">Privacy</a>
+      </nav>
+      <button id="mode" class="px-3 py-2 text-sm rounded-xl border border-black/10 hover:bg-black/5" title="Theme">
+        <span id="modeLabel">🌙</span>
+      </button>
+    </div>
+  </header>
+
+  <main class="max-w-4xl mx-auto px-4 py-10">
+    <nav class="text-sm text-ink-500 dark:text-gray-300 flex flex-wrap items-center gap-2">
+      <div>
+        <a class="hover:underline" href="/">Home</a> <span class="mx-1">/</span>
+        <a class="hover:underline" href="/#privacy">Privacy</a> <span class="mx-1">/</span>
+        <span>DailyToolBox</span>
+      </div>
+      <span class="mx-2 text-xs opacity-70">·</span>
+      <a href="/privacy/dailytoolbox.html" class="text-xs underline hover:text-green-600">Türkçe sürüm</a>
+    </nav>
+
+    <h1 class="mt-4 text-3xl md:text-4xl font-extrabold tracking-tight">DailyToolBox – Privacy Policy</h1>
+    <p class="mt-2 text-sm text-ink-500 dark:text-gray-300">
+      Last updated: <strong>05 January 2026</strong> · Publisher:
+      <strong>8catSoftware</strong> ·
+      Contact:
+      <a class="text-green-600 hover:underline" href="mailto:8catsoftware@gmail.com">8catsoftware@gmail.com</a>
+    </p>
+    <hr class="my-6 border-black/10">
+
+    <div class="prose prose-sm md:prose-base prose-headings:font-semibold dark:prose-invert max-w-none">
+
+      <h2>Privacy Policy</h2>
+      <p>
+        This Privacy Policy explains how the DailyToolBox app (“App”) collects, uses, and shares information.
+        We request certain device permissions only to provide the features you use (such as PDF tools, scanning, QR,
+        and file creation). We do not require you to create an account, and we do not collect directly identifiable
+        personal information like your name, phone number, or email address inside the app.
+      </p>
+
+      <h2>1. Permissions We Request and Why</h2>
+
+      <h3>A. Camera and Flashlight (<code>CAMERA</code>, <code>FLASHLIGHT</code>)</h3>
+      <p>
+        <strong>Purpose:</strong> To scan QR/barcodes and to provide document scanning features (Document Scanner),
+        and to optionally use the flashlight.
+      </p>
+      <p>
+        <strong>Processing:</strong> Camera frames can be processed on-device using Google ML Kit. Images are not
+        sent to our servers unless you explicitly share/export files using other apps.
+      </p>
+
+      <h3>B. Microphone (<code>RECORD_AUDIO</code>)</h3>
+      <p>
+        <strong>Purpose:</strong> For sound-related tools (e.g., decibel meter) or audio features that require microphone input.
+      </p>
+      <p>
+        <strong>Processing:</strong> Audio input is processed in real time for measurement. We do not upload audio data to our servers.
+        If you actively record and save audio (if available), it is stored locally on your device.
+      </p>
+
+      <h3>C. Storage / Files (<code>READ_EXTERNAL_STORAGE</code>, <code>WRITE_EXTERNAL_STORAGE</code>)</h3>
+      <p>
+        <strong>Purpose:</strong> To let you pick files (PDF/Word/Excel/images), create new documents (e.g., image-to-PDF),
+        and save results to your device.
+      </p>
+      <p>
+        <strong>Scope:</strong> The App accesses files you select or generate. It does not silently scan unrelated files.
+        You remain in control via system file pickers and share dialogs where available.
+      </p>
+
+      <h3>D. Internet / Network State (<code>INTERNET</code>, <code>ACCESS_NETWORK_STATE</code>)</h3>
+      <p>
+        <strong>Purpose:</strong> To show ads (Google AdMob), check network availability, and (if enabled) download any online content
+        required by features.
+      </p>
+
+      <h3>E. Vibration (<code>VIBRATE</code>)</h3>
+      <p>
+        <strong>Purpose:</strong> To provide haptic feedback (e.g., successful scan, action confirmation) and to support notification vibration.
+        This permission does not provide access to personal data.
+      </p>
+
+      <h3>F. Battery Information (<em>no special permission required in most cases</em>)</h3>
+      <p>
+        <strong>Purpose:</strong> If the App includes battery-related tools, it may read battery level/status using standard Android APIs.
+        We do not collect or upload battery usage statistics from your device.
+      </p>
+
+      <h2>2. Third-Party Services</h2>
+
+      <h3>Google AdMob (Ads)</h3>
+      <p>
+        The App uses Google AdMob to display ads. Google may process the Advertising ID (AAID), device model, OS version,
+        approximate location derived from IP address, and other technical signals for ad delivery, measurement, frequency capping,
+        fraud/abuse prevention, and legal compliance. This processing is governed by Google’s own privacy policies and controls.
+      </p>
+
+      <h3>Google ML Kit (On-device scanning)</h3>
+      <p>
+        The App uses Google ML Kit for barcode/QR scanning and document scanning features. Processing generally occurs on the device.
+        We do not send your camera images to our servers.
+      </p>
+
+      <h2>3. Data Security</h2>
+      <p>
+        We use reasonable safeguards to protect data stored locally by the App. However, no method of electronic storage or transmission
+        is 100% secure. We recommend keeping your device protected with a screen lock and OS updates.
+      </p>
+
+      <h2>4. Children’s Privacy</h2>
+      <p>
+        The App is not designed for children under 13 and does not knowingly collect personal information from children.
+        If you believe a child has provided personal data, contact us and we will take appropriate steps.
+      </p>
+
+      <h2>5. Changes to This Policy</h2>
+      <p>
+        We may update this Privacy Policy from time to time. The latest version will be published on this page and becomes effective
+        immediately upon posting.
+      </p>
+
+      <h2>6. Contact</h2>
+      <p>
+        If you have questions or requests about privacy, contact us at:
+        <a href="mailto:8catsoftware@gmail.com">8catsoftware@gmail.com</a>
+      </p>
+    </div>
+
+    <div class="mt-10 flex flex-wrap gap-3">
+      <a href="/#privacy" class="inline-flex items-center gap-2 px-4 py-2 rounded-xl border border-black/10 hover:bg-black/5">
+        ← Back to privacy overview
+      </a>
+      <a href="/privacy/dailytoolbox.html" class="inline-flex items-center gap-2 px-4 py-2 rounded-xl border border-black/10 hover:bg-black/5">
+        Türkçe sürüme dön
+      </a>
+    </div>
+  </main>
+
+  <footer class="border-t border-black/5">
+    <div class="max-w-4xl mx-auto px-4 py-10 text-sm flex flex-col md:flex-row items-center justify-between gap-3">
+      <p>© <span id="year"></span> 8catSoftware. All rights reserved. 🐾</p>
+      <div class="flex gap-4">
+        <a href="/" class="hover:underline">Home</a>
+        <a href="/privacy/qibla-en.html" class="hover:underline">QiblaFinder Privacy</a>
+        <a href="https://github.com/8catSoftware" class="hover:underline" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Dark mode toggle
+    const root = document.documentElement;
+    const label = document.getElementById('modeLabel');
+    const saved = localStorage.getItem('ws-theme');
+    if (saved === 'dark' || (!saved && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+      root.classList.add('dark');
+      label.textContent = '☀️';
+    }
+    document.getElementById('mode').addEventListener('click', () => {
+      root.classList.toggle('dark');
+      const isDark = root.classList.contains('dark');
+      localStorage.setItem('ws-theme', isDark ? 'dark' : 'light');
+      label.textContent = isDark ? '☀️' : '🌙';
+    });
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
